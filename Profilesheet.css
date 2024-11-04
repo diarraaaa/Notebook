@@ -1,0 +1,96 @@
+/* Global body styling */
+body {
+    background-image: url('back.png'); /* Ensure the path to your PNG file is correct */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* No default margin */
+    display: flex; /* Flexbox for centering the content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+/* Main container for forms */
+.form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    border-style: double;
+    border-color: black;
+    border-width: 2px;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 250px; /* Min-height for flexibility */
+    min-width: 300px; /* Min-width for flexibility */
+    background-color: rgb(197, 197, 197); /* Form background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle 3D effect */
+    margin: 10px; /* Space around the form */
+}
+.formdisconnect {
+    border-style: double;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle 3D effect */
+    margin-top: 10px; /* Space around the form */
+}
+
+/* Centering the greeting text */
+p {
+    color: rgb(255, 255, 255); /* Greeting text color */
+    font-size: 2rem; /* Font size for greeting */
+    margin-bottom: 20px; /* Space below the greeting */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+h1 {
+    color: rgb(63, 63, 63); /* Greeting text color */
+    font-size: 20px; /* Font size for greeting */
+    margin-bottom: 20px; /* Space below the greeting */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="password"] {
+    width: 80%; /* Responsive width */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: rgb(44, 88, 88); /* Submit button color */
+    color: white; /* White text for contrast */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: rgb(30, 60, 60); /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift */
+}
+/* Disconnect button styling */
+input[type="submit"].disconnect {
+    background-color: rgb(200, 0, 0); /* Distinct color for disconnect */
+}
+
+input[type="submit"].disconnect:hover {
+    background-color: rgb(150, 0, 0); /* Darker shade on hover */
+}
+/* Input labels styling */
+label {
+    color: rgb(87, 87, 87); /* Input label color */
+    font-size: 1rem; /* Font size for labels */
+}
